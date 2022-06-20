@@ -38,17 +38,19 @@ let totalSemVinho = refrigerante + macarrao + ervilha + arroz + feijao;
 
 let total = refrigerante + macarrao + ervilha + arroz + feijao + vinho;
 alert(`Valor total a ser pago: ${total}`)
-
+console.log("O valor total a ser pago é " + total)
 
 if(total % 2 == 0){
     let metadeSemVinho = totalSemVinho / 2
-    let voce = metadeSemVinho - vinho;
+    let voce = metadeSemVinho
     let amigo = metadeSemVinho + vinho; 
 
     alert(`Deu par você paga ${voce} e seu amigo paga ${amigo}.`);
+    console.log("O valor total a ser pago é " + total + ". Você terá que pagar "+ voce + "e seu amigo o valor de " + amigo)
   }else{
     let metade = total / 2
     let voce = metade;
     let amigo = metade;
     alert(`Deu ímpar você paga ${voce} e seu amigo paga ${amigo}.`);
+    console.log("O valor total a ser pago é " + total + ". Você terá que pagar "+ voce + " e seu amigo o valor de " + amigo)
   }
